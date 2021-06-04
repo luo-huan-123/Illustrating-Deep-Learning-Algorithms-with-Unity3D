@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Modern Interior Pack/Example Scene/room_example.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

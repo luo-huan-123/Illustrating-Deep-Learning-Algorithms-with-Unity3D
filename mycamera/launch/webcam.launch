@@ -1,0 +1,39 @@
+<launch>
+
+<!-- <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+  <param name="video_device" value="/dev/video2" />
+  <param name="image_width" value="640" />
+  <param name="image_height" value="480" />
+  <param name="pixel_format" value="yuyv" />
+  <param name="camera_frame_id" value="usb_cam" />
+  <param name="io_method" value="mmap"/>
+</node> -->
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<arg name="port" value="9090"/>
+	</include>
+
+	<node name="file_server" pkg="file_server" type="file_server" output="screen"/>
+
+  <node pkg="joy" type="joy_node" name="joy_node">
+    <remap from= "/joy" to="/joy2"/>
+  </node>
+
+  <node pkg="mycamera" name="modify_joy" type="modify_joy.py"/>
+
+
+	<node name="rqt_graph" pkg="rqt_graph" type="rqt_graph" output="screen" />
+
+    <!-- Node communicating with the GPU and getting the depth image -->
+  <node name="SendVideo" pkg="mycamera" type="send_video.py" output="screen">
+    <param name="~hostname" value="localhost" type="str"/> 
+    <param name="~port" value="6008" type="int"/>
+    <param name="max_depth" value="10.0" type="double"/>
+    <remap from="/camera_info" to="/usb_cam/camera_info"/>
+    <remap from="/image_in/compressed" to="/unity_image/compressed" />
+  </node>
+
+  <!-- Viewer -->
+  <node name="cam1" pkg="rqt_image_view" type="rqt_image_view" />
+  <node name="cam2" pkg="rqt_image_view" type="rqt_image_view" />
+
+</launch>

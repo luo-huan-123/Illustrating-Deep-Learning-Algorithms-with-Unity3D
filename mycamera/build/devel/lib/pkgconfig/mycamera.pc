@@ -1,0 +1,8 @@
+prefix=/home/huan/catkin_ws/src/mycamera/build/devel
+
+Name: mycamera
+Description: Description of mycamera
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/huan/catkin_ws/src/mycamera/build/devel/setup.sh
