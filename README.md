@@ -25,7 +25,7 @@ Then, you launch:
     
 And start the game in Unity 3D.
 
-Finally, you could enjoy the game. 
+Finally, you could enjoy the game. You can watch [video 1](https://youtu.be/qmiSZqMQyUM), and [video 2](https://youtu.be/7Vfmxhz9GIc)
 
 
 
