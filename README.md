@@ -8,8 +8,8 @@ Firstly, we have to download an indoor scene directly to our new Unity3D project
 
 Next, we have to write a ROS package to communicate with Unity 3D. You could use our package named 'mycamera'. With the package, you could control the turtlebot3 in Unity 3D, subscribe the images captured by main camera in Unity, send them to dldemos server and recieve the semantic segmentation results. 
 
-<img width="150" height="150" src="https://github.com/luo-huan-123/Illustrating-Deep-Learning-Algorithms-with-Unity3D/blob/main/Images/segmentaion.jpg"/>
-<img width="150" height="150" src="https://github.com/luo-huan-123/Illustrating-Deep-Learning-Algorithms-with-Unity3D/blob/main/Images/segmentaion1.jpg"/>
+<img width="300" height="300" src="https://github.com/luo-huan-123/Illustrating-Deep-Learning-Algorithms-with-Unity3D/blob/main/Images/segmentaion.jpg"/>
+<img width="300" height="300" src="https://github.com/luo-huan-123/Illustrating-Deep-Learning-Algorithms-with-Unity3D/blob/main/Images/segmentaion1.jpg"/>
 
 ## Steps 
 
