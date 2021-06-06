@@ -8,6 +8,9 @@ Firstly, we have to download an indoor scene directly to our new Unity3D project
 
 Next, we have to write a ROS package to communicate with Unity 3D. You could use our package named 'mycamera'. With the package, you could control the turtlebot3 in Unity 3D, subscribe the images captured by main camera in Unity, send them to dldemos server and recieve the semantic segmentation results. 
 
+![image](https://github.com/luo-huan-123/Illustrating-Deep-Learning-Algorithms-with-Unity3D/edit/main/Images/segmentation.jpg)
+![image](https://github.com/luo-huan-123/Illustrating-Deep-Learning-Algorithms-with-Unity3D/edit/main/Images/segmentation1.jpg)
+
 ## Steps 
 
 To start with, we have to start the dldmos_sever. (you could follow this [tutorial](https://github.com/jeremyfix/deeplearning_demos)) Fortunately, we can use the CentraleSupelc’s GPU cluster. For connecting school’s GPU, you set the SSH key to avoid having to enter the password every connection, and book a machine, login and port forword(set up ssh tunnel). See details in [SSH](https://tutos.metz.centralesupelec.fr/TPs/SSH/), and [Book](https://tutos.metz.centralesupelec.fr/TPs/Clusters/allocation.html).  
